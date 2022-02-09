@@ -9,6 +9,10 @@
 	>
 	
 	<display-name>Applications List</display-name>
+	<description>Showing list of deployed applications</description>
+	<icon><large-icon></large-icon></icon>
+	<icon><small-icon></small-icon></icon>
+	
 	<listener>
 		<listener-class>com.kachanov.list.ListServlet</listener-class>
 	</listener>
@@ -41,7 +45,6 @@
 			<role-name>admin</role-name>
 		</auth-constraint>
 	</security-constraint>
-
 	<!-- ============= Security-constraint section ends here ======== -->
 
 	<!-- ============= Login-config section starts here ======== -->

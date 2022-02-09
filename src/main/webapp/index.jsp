@@ -14,8 +14,12 @@ Host host = (Host)application.getAttribute("host");
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<style>
+	html {
+		-webkit-text-size-adjust: 100%;
+	}
+	
 	body {
 		padding: 0;
 		margin: 0;
@@ -25,13 +29,11 @@ Host host = (Host)application.getAttribute("host");
 			padding: 1em;
 			margin: 1em;
 			border: 1px solid #cccccc; 
-			width: 90%;
+			width: 70%;
 			display: inline-block;
 		}
 	</style>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>List of Applications - MyInfoServer</title>
-
 </head>
 
 <body>
@@ -50,7 +52,7 @@ Host host = (Host)application.getAttribute("host");
 
 <h1>List of Applications</h1>
 
-<div style="width: 90%">
+<div style="width: 70%">
 	<div class="block">
 	<a target="_blank" href="http://<%= InetAddress.getLocalHost().getHostAddress() %>:8080/">Japan Wiki</a><br/>
 	available: true
